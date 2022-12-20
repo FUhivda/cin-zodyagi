@@ -1,23 +1,37 @@
-# Compiled class file
-*.class
+import java.util.Scanner;
+public class cinZodyagiHesaplama {
+    public static void main(String[] args){
 
-# Log file
-*.log
+        int year,monkey,cockerel,dog,pig,mouse,ox,tiger,rabbit,dragon,snake,horse,sheep;
+        Scanner inp = new Scanner(System.in);
+        System.out.print("What's your birth day? : ");
+        year = inp.nextInt();
+        int kalan = year % 12;
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+        if (kalan==0) {
+            System.out.println("Your chinese zodiac sign : MONKEY");
+        } else if (kalan==1) {
+            System.out.println("Your chinese zodiac sign : COCKEREL");
+        }  else if (kalan==2) {
+            System.out.println("Your chinese zodiac sign : DOG");
+        }  else if (kalan==3) {
+            System.out.println("Your chinese zodiac sign : PİG");
+        }  else if (kalan==4) {
+            System.out.println("Your chinese zodiac sign : MOUSE");
+        }   else if (kalan==5) {
+            System.out.println("Your chinese zodiac sign : OX");
+        }  else if (kalan==6) {
+            System.out.println("Your chinese zodiac sign : TİGER");
+        }  else if (kalan==7) {
+            System.out.println("Your chinese zodiac sign : RABBİT");
+        }  else if (kalan==8) {
+            System.out.println("Your chinese zodiac sign : DRAGON");
+        }  else if (kalan==9) {
+            System.out.println("Your chinese zodiac sign : SNAKE");
+        }  else if (kalan==10) {
+            System.out.println("Your chinese zodiac sign : HORSE");
+        }  else if (kalan==11) {
+            System.out.println("Your chinese zodiac sign : SHEEP");
+        }
+    }
+}
